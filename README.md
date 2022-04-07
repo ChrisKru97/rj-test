@@ -5,9 +5,11 @@ Try to complete as many tasks as You can in reasonable time
 ### Tasks:
 
 #### 1. Git
+- Fork this repo to your account
 - Save all the finished tasks from below sections (2.-4.) into commit with message `added tasks` (You will need to do rebase)
 - Update the message of commit with message `added tasks` to say: `added and finished tasks`
 - Revert commit with message `commit to be reverted`
+- Send us the link to your forked public repo
 
 #### 2. Prettier
 - Add the package
