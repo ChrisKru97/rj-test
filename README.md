@@ -1,34 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### Info
 
-## Getting Started
+Try to complete as many tasks as You can in reasonable time
 
-First, run the development server:
+### Tasks:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+4. Git
+- Save all the finished tasks into commit with message `added tasks` (You will need to do rebase)
+- Update the message of commit with message `added tasks` to say: `added and finished tasks`
+- Revert commit with message `commit to be reverted`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Prettier
+- Add the package
+- Configure the prettier to use single quote everywhere
+- Make sure the prettier prettifies the source files before start (hint: use package.json files for it and search for npm CLI scripts)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+2. Next
+- Edit `QrBox.js` so that it renders Qr code with correct data (use some package from npm)
+- Create context with selected tab state
+- Connect `Tabs` to the context
+- Connect `Alert` to the context and display selected tab index
+- Add new color `primary-yellow` to the Tailwind theme with value `#FABB00`
+- Optimize the code however You like :)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+3. Gitlab CI
+- Create gitlab ci configuration file that will have build stage
+- Make the build stage run only on main(master) branch
+- Save the artifacts on successful build (.out folder)
