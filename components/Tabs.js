@@ -1,14 +1,20 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import NavLink from './NavLink';
 
+import { SelectedTabContext } from '../selectedTab/context';
+
 const Tabs = ({ children, navItems, contentClassName }) => {
-  const [active, setActive] = useState(0);
+  const { active, setActive } = useContext(SelectedTabContext);
 
   return (
     <>
       <nav className="flex mb-2">
         {navItems.map((item, index) => (
-          <NavLink key={item} selected={active === index} onClick={() => setActive(index)}>
+          <NavLink
+            key={item}
+            selected={active === index}
+            onClick={() => setActive(index)}
+          >
             {item}
           </NavLink>
         ))}

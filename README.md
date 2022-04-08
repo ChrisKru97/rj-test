@@ -1,6 +1,6 @@
 ### Info
 
-Try to complete as much tasks as You can in reasonable time
+Try to complete as many tasks as You can in reasonable time
 
 ### Tasks:
 
@@ -23,3 +23,8 @@ Try to complete as much tasks as You can in reasonable time
 - Connect `Alert` to the context and display selected tab index (something like: `Current selected tab: 0`)
 - Add new color `primary-yellow` to the Tailwind theme with value `#FABB00`
 - Optimize the code however You like :)
+
+#### 4. Gitlab CI
+- Create gitlab ci configuration file that will have build stage
+- Make the build stage run only on main(master) branch
+- Save the artifacts on successful build (.out folder)
